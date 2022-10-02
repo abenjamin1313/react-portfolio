@@ -7,6 +7,9 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 
 export default function Home() {
   return (
@@ -62,6 +65,78 @@ export default function Home() {
             <Image src={deved} layout="fill" objectFit="cover" />
           </div>
         </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I am a web architect that passionately manipulates pixels and
+              lines of code to
+              <span className="text-blue-500">
+                craft clean, responsive, and user-friendly
+              </span>
+              websites. I like processes, flow charts, and procedures. Better to
+              design processes around positions and departments not people.
+              Current tools of choice of using
+              <span className="text-blue-500">Gutenberg</span> to create SUPER
+              fast & SECURE WordPress sites with responsive semantic
+              experiences. If the need arises I utilize
+              <span className="text-blue-500">
+                GRID & Flexbox CSS and Tailwind CSS or bootstrap 5
+              </span>
+              if needed for rapid development to demonstrate visual ideas in the
+              browser. For app development I generally choose reactJS with web
+              components to bring a unique custom web experience. Managing all
+              the components with one global SASS architecture, with theming and
+              custom CSS3 animations.
+            </p>
+          </div>
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating unquie designs suited for your web needs.
+              </p>
+              <h4 className="py-4 text-teal-600">Designs tools I use.</h4>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Custom Animations</p>
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                For App development I choose reactJS with web components to
+                bring a unique custom web experience.
+              </h3>
+              <p className="py-2">
+                Creating unquie designs suited for your web needs.
+              </p>
+              <h4 className="py-4 text-teal-600">Designs tools I use.</h4>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">JavaScript</p>
+              <p className="text-gray-800 py-1">WordPress</p>
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={consulting} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Design better processes
+              </h3>
+              <p className="py-2">
+                I prefer to build and design better processes around positions
+                and departments not people.
+              </p>
+              <h4 className="py-4 text-teal-600">Designs tools I use.</h4>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Custom Animations</p>
+            </div>
+          </div>
+        </section>
+        
       </main>
     </div>
   );
